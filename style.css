@@ -72,3 +72,11 @@ body {
       font-size: 12px;
   }
 }
+@media (max-width: 768px) {
+  #home {
+      padding-bottom: 0 !important;
+  }
+  #about {
+      margin-top: 0 !important;
+  }
+}
