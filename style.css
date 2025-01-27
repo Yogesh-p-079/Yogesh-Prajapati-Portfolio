@@ -168,3 +168,9 @@ a {
     margin-top: 0 !important;
   }
 }
+@media (max-width: 480px){
+   #para11{
+    justify-content: center;
+  }
+}
+    
