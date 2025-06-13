@@ -203,3 +203,19 @@ img {
     padding: 8px 12px;
   }
 }
+.progress-bar {
+  text-align: left;
+  padding-left: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .footer__social a {
+    font-size: 20px;
+  }
+  #skills p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
