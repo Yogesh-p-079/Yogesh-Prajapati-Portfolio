@@ -1,39 +1,67 @@
 body {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Arial", sans-serif; /* You can change this to your preferred font */
+  font-size: 16px; /* Default font size */
   line-height: 1.5;
-  color: #333;
+  color: #333; /* Text color */
   margin: 0;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #222;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif style;
+  color: #222; 
 }
 
-/* Texts */
-p, li, a {
-  font-size: 16px;
+p,
+li,
+a {
+  font-size: 16px; /* Set a base font size for paragraphs and list items */
 }
 
-/* Buttons */
+/* Button styling */
 .btn {
   font-size: 16px;
   padding: 10px 15px;
 }
 
-/* Navbar */
+/* Navbar font size */
 .navbar .nav-link {
   font-size: 16px;
-  color: #555 !important;
+  color: #555 !important; /* Ensure visibility */
 }
 
-/* Footer */
+/* Footer styling */
 .footer {
   font-size: 16px;
-  background-color: #2c3e50;
-  color: white;
+}
+
+#home img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+#about img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+#skills img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
   text-align: center;
   padding: 20px;
 }
@@ -49,7 +77,7 @@ p, li, a {
 }
 
 .footer__icon {
-  color: #fff;
+  color: #fff; /* White icons */
   font-size: 24px;
   margin: 0 10px;
   transition: color 0.3s ease;
@@ -57,7 +85,7 @@ p, li, a {
 }
 
 .footer__icon:hover {
-  color: #f39c12;
+  color: #f39c12; /* Highlight color on hover */
 }
 
 .footer__copy {
@@ -66,75 +94,92 @@ p, li, a {
 }
 
 .footer a {
-  color: #f39c12;
+  color: #f39c12; /* Highlight color for links */
   text-decoration: none;
 }
 
 .footer a:hover {
   text-decoration: underline;
 }
-
-/* Hover animations */
-#home img:hover,
-#about img:hover,
-#skills img:hover,
 #projects .card:hover {
   transform: scale(0.9);
   cursor: pointer;
   transition: transform 0.3s ease;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
 }
 
-/* Section Backgrounds */
+/* Home Section Background */
 .home {
-  background-color: #eef2f7;
+  background-color: #eef2f7; 
   color: #333;
 }
 
+/* About Section Background */
 #about {
-  background-color: #d9e5f4;
+  background-color: #d9e5f4; 
   color: #333;
 }
 
-#skills,
+/* Skills Section Background */
+#skills {
+  background-color: #eef2f7; 
+  color: #333;
+}
+
+/* Projects Section Background */
 #projects {
-  background-color: #eef2f7;
+  background-color: #eef2f7; 
   color: #333;
 }
 
-/* Underline on hover */
-#mob1:hover {
+/* Footer Section Background */
+.footer {
+  background-color: #2c3e50; 
+  color: white;
+}
+#mob1:hover{
   text-decoration: underline;
 }
 
-/* Skills progress bars */
-.skill-bar {
-  width: 100%;
-  max-width: 400px;
-}
 
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__icon {
+    margin: 10px;
+  }
+  .footer__copy {
+    font-size: 12px;
+  }
 }
-
-/* Containers and layout */
+@media (max-width: 768px) {
+  #home {
+    padding-bottom: 0 !important;
+  }
+  #about {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 480px){
+   #para11{
+    justify-content: center;
+  }
+}
+/* Basic responsive layout */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
-.skills, .projects, .about, .contact {
-  flex: 1 1 300px;
-  padding: 20px;
-}
-
-/* Responsive Design */
-
-/* Tablet and below */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -149,73 +194,10 @@ img {
   .profile-image {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   .download-btn {
     display: block;
     margin: 10px auto;
-  }
-
-  #home {
-    padding-bottom: 0 !important;
-  }
-
-  #about {
-    margin-top: 0 !important;
-  }
-
-  .footer__title {
-    font-size: 20px;
-  }
-
-  .footer__social {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .footer__icon {
-    margin: 10px;
-  }
-
-  .footer__copy {
-    font-size: 12px;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  #para11 {
-    justify-content: center;
-  }
-
-  .skills, .projects, .about, .contact {
-    padding: 5px;
-  }
-
-  .footer__title {
-    font-size: 18px;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
-.progress-bar {
-  text-align: left;
-  padding-left: 5px;
-  font-weight: bold;
-  color: #fff;
-}
-
-@media (max-width: 576px) {
-  .footer__social a {
-    font-size: 20px;
-  }
-  #skills p {
-    font-size: 14px;
-    margin-bottom: 5px;
   }
 }
